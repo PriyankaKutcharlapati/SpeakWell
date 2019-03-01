@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="campus.englishguide">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/finallogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".VerifyPhone"></activity>
+        <activity android:name=".ComputerResult" />
+        <activity android:name=".ComputerQuestion" />
+        <activity android:name=".GameComputer" />
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/title_activity_first" />
+        <activity android:name=".SplashPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Pronounce" />
+        <activity android:name=".Collections" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Grammar" />
+        <activity android:name=".ExercisePage" />
+        <activity android:name=".Chat" />
+        <activity android:name=".LoginFinal" />
+        <activity android:name=".RegisterFinal" />
+    </application>
+
+</manifest>

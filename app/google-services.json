@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "682472450895",
+    "firebase_url": "https://englishguide-590a2.firebaseio.com",
+    "project_id": "englishguide-590a2",
+    "storage_bucket": "englishguide-590a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682472450895:android:6cd223d8b08dbf10",
+        "android_client_info": {
+          "package_name": "campus.englishguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682472450895-ojlv05a7dgnc89smpmmvu7gcek5ekkv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChEDjpgICNIYvQwRVcCB_iH6DJMFBCJEc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004466"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+
+    <include
+        layout = "@layout/app_bar"
+        android:id="@+id/bar"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:id="@+id/display"
+        android:layout_below="@+id/bar"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:text="Word of the Day:"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/display"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/bar"
+        android:drawableRight="@drawable/heart"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="95dp"
+        android:text="Unwished : not welcome"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/floatingActionMenu"
+        app:menu_showShadow="true"
+        app:menu_backgroundColor="#004466"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        app:menu_fab_label=""
+        app:menu_icon="@drawable/menu"
+        app:menu_colorNormal="#00ffff"
+        app:menu_colorPressed="#00ffff"
+        app:menu_openDirection="up"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:fab_colorPressed="#ffffff"
+            app:fab_colorNormal="#ffffff"
+            app:fab_label="Pronounce"
+            app:fab_size="normal"
+            app:backgroundTint="#428684"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/floatingItem1"
+            android:src="@drawable/pronouncefinal"
+            android:onClick="pronounceFunction"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:fab_colorPressed="#ffffff"
+            app:fab_colorNormal="#ffffff"
+            app:fab_label="Talk to me"
+            app:fab_size="normal"
+            app:backgroundTint="#428684"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/floatingItem2"
+            android:src="@drawable/chat4"
+            android:onClick="chatFunction"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:fab_colorPressed="#ffffff"
+            app:fab_colorNormal="#ffffff"
+            app:fab_label="Exercise"
+            app:backgroundTint="#428684"
+            app:fab_size="normal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/floatingItem3"
+            android:src="@drawable/exercise2"
+            android:onClick="exerciseFunction"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:fab_colorPressed="#ffffff"
+            app:fab_colorNormal="#ffffff"
+            app:fab_label="Grammar"
+            app:fab_size="normal"
+            app:backgroundTint="#428684"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/floatingItem5"
+            android:src="@drawable/grammar4"
+            android:onClick="grammarFunction"
+            />
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</RelativeLayout>

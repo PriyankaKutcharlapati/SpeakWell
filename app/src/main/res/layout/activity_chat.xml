@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#004466"
+    tools:context="campus.englishguide.Chat">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/meLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="System"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/friendLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="User"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:textSize="25dp"
+            android:background="#00ffff"
+            android:layout_marginTop="50dp"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="25dp"
+            android:layout_alignParentRight="true"
+            android:background="#002233"
+            android:layout_marginTop="100dp"
+            android:textColor="#ffffff"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What are your hobbies??"
+            android:textSize="25dp"
+            android:background="#00ffff"
+            android:layout_marginTop="170dp"
+            android:textColor="#000000"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="25dp"
+            android:id="@+id/output"
+            android:background="#002233"
+            android:layout_marginTop="300dp"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:src="@drawable/mike_pronounce"
+            android:layout_marginLeft="140dp"
+            android:onClick="getSpeechInput"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
